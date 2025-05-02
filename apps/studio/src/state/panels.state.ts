@@ -10,6 +10,7 @@ export type PanelsState = {
     primaryPanel: boolean;
     secondaryPanel: boolean;
     contextPanel: boolean;
+    aiPanel:boolean;
   };
   // TODO: remove when panels tabs will be introduced
   secondaryPanelType: 'template' | 'visualiser';
@@ -26,6 +27,7 @@ export const panelsState = create(
         primaryPanel: true,
         secondaryPanel: true,
         contextPanel: true,
+        aiPanel: false,
       },
       secondaryPanelType: 'template',
     }), 
