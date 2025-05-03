@@ -61,7 +61,7 @@ export const AsyncAI: React.FunctionComponent<NavigationProps> = ({
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://35.193.108.120:3001/api/ai-assistant', {
+      const response = await fetch('https://35.193.108.120:3001/api/ai-assistant', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: [...messages, userMessage], rawSpec }),
